@@ -5,10 +5,10 @@ from django.http import HttpResponse
 
 
 class ThorView(TemplateView):
-    template_name='Thor.html'
+    template_name='thor.html'
 
 class HulkView(TemplateView):
-    template_name='Hulk.html'
+    template_name='hulk.html'
     
 class HomeView(TemplateView):
     template_name='home.html'
