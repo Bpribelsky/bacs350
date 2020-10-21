@@ -25,7 +25,7 @@ SECRET_KEY = 'vsqo_66=omca929lh_&kvs#7)6n=yaqhw0h)&lu-#*+6^0frrp'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ['bcsturdy.pythonanywhere.com', 'localhost']
 
 
 # Application definition
