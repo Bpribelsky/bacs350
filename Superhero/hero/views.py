@@ -47,4 +47,3 @@ class HeroEditView(CreateView):
     template_name = "hero_edit.html"
     model = Superhero
     fields = '__all__'
-
