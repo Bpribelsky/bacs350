@@ -1,19 +1,19 @@
-from .models import Superhero
+from .models import SuperHero
 
 def add_hero(hero_name, hero_id, hero_info):
-    return Superhero.objects.create(name = hero_name, identity =hero_id)
+    return SuperHero.objects.create(name = hero_name, identity =hero_id)
 
 def list_heroes():
-    return Superhero.objects.all()
+    return SuperHero.objects.all()
 
 def get_hero(pk):
-    return Superhero.objects.get(pk=pk)
+    return SuperHero.objects.get(pk=pk)
 
 def get_identity(id):
-    return Superhero.objects.get(identity=id)
+    return SuperHero.objects.get(identity=id)
 
 def get_hero_name(supername):
-    return Superhero.objects.get(name=supername)
+    return SuperHero.objects.get(name=supername)
 
 def set_hero_id(pk, id):
     w = get_hero(pk)
@@ -26,4 +26,4 @@ def set_hero_name(pk, name):
     w.save()
     
 def delete_hero(pk):
-    Superhero.objects.get(pk=pk).delete() 
+    SuperHero.objects.get(pk=pk).delete() 

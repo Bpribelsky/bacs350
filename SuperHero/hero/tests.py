@@ -1,6 +1,6 @@
 from django.test import TestCase
 
-from .models import Superhero
+from .models import SuperHero
 from .hero import list_heroes
 
 class CrudTests(TestCase):

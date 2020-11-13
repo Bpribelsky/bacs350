@@ -1,6 +1,6 @@
-from django.apps import hero
+from django.apps import AppConfig
 
 
-class HeroConfig(hero):
+class HeroConfig(AppConfig):
     name = 'hero'
     

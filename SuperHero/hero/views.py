@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView, ListView
 from django.views.generic.edit import CreateView
-from .models import Superhero
+from .models import SuperHero
 
 class PageView(TemplateView):
     def get_template_names(self):
@@ -22,28 +22,28 @@ class HeroView(ListView):
         return{
             'hero': self.kwargs.get('hero')
         }
-    model = Superhero
+    model = SuperHero
     context_object_name = "all_heros_list"
         
 
 class HomePageView(ListView):
-    model = Superhero
+    model = SuperHero
     template_name = 'home.html'
     context_object_name = "all_heros_list"
 
 class DetailView(ListView):
     template_name = "detail.html"
     
-    model = Superhero
+    model = SuperHero
     context_object_name = "all_heros_list"
     
 class addHeroView(CreateView):
-    model = Superhero
+    model = SuperHero
     template_name = "create.html"
     context_object_name = "all_heros_list"
     fields = '__all__'
     
 class HeroEditView(CreateView):
     template_name = "hero_edit.html"
-    model = Superhero
+    model = SuperHero
     fields = '__all__'
